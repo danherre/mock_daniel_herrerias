@@ -3,6 +3,7 @@ import reactDOM from 'react-dom';
 import Cabecero from './cabecero';
 import Carrusel from './carrusel';
 import Destacados from './destacados';
+import Posts from './posts';
 
 const App = () => {
     return (
@@ -10,6 +11,7 @@ const App = () => {
             <Cabecero />
             <Carrusel />
             <Destacados />
+            <Posts />
         </div>
     );
 };
