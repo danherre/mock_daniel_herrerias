@@ -24,8 +24,8 @@ class PostCollection extends React.Component {
         );
     }
 
-    addPost(temp) {
-        // Sé que cambiar state así no es lo más correcto, per usando setState aquí tenía problemas de stack
+    addPost = (temp) => {
+        // Sé que cambiar state así no es lo más correcto, per usando setState aquí tenía problemas con setState
         this.state.numPosts = temp + 1;
         return <Post numPosts={this.state.numPosts}/>;
     }

@@ -2,21 +2,27 @@ import react from 'react';
 import PostCollection from './postCollection';
 
 class Posts extends react.Component {
-    state = {numCollections: 0};
+    state = {numCollections: 2, collections: [<PostCollection numCollections={1}/>]};
 
     render() {
         return(
             <div className="posts">
                 <h1>Últimas Noticias</h1>
-                {this.addCollection(this.state.numCollections)}
+                {this.state.collections}
+                <div>
+                    <button onClick={this.addCollection} type="button" class="btn btn-info">Mostrar más</button>
+                </div>
             </div>
         );
     }
 
-    addCollection(temp) {
-        // Sé que cambiar state así no es lo más correcto, per usando setState aquí tenía problemas de stack
-        this.state.numCollections = temp + 1;
-        return <PostCollection numCollections={this.state.numCollections}/>;
+    addCollection = () => {
+        this.setState({
+            numCollections: this.state.numCollections + 1
+        })
+        this.setState({
+            collections: [...this.state.collections, <PostCollection numCollections={this.state.numCollections}/>]
+        })
     }
 }
 

@@ -5,7 +5,7 @@ import logo from './logo.png';
 const Cabecero = () => {
     return(
         <div>
-            <div className="navbar">
+            <div className="navbar sticky">
                 <a href="/">
                     <img id="logo" src={logo} alt="logo"/>
                 </a>

@@ -1,3 +1,8 @@
+.sticky {
+    position: fixed;
+    width: 100%;
+}
+
 #logo {
     width: 120px;
 }
@@ -102,6 +107,7 @@
 .posts {
     text-align:center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .postCollection {
@@ -111,4 +117,8 @@
 
 .row-post {
     margin-top: 30px;
+}
+
+.btn-info {
+    margin-top: 15px;
 }
