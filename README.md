@@ -1,3 +1,7 @@
+# Mock Website
+
+I am currently completing this project as part of a job application process. I implemented this web app in React and used Bootstrap for styling purposes.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
