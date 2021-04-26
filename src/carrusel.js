@@ -2,6 +2,7 @@ import React from "react";
 
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './mock_style.css';
 
 class BootstrapCarouselComponent extends React.Component {
 

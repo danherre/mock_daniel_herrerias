@@ -1,4 +1,5 @@
 import React from 'react';
+import './mock_style.css';
 
 const Destacados = () => {
     return(

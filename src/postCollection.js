@@ -1,5 +1,6 @@
 import React from 'react';
 import Post from './post';
+import './mock_style.css';
 
 class PostCollection extends React.Component {
     constructor(props) {

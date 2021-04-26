@@ -1,5 +1,6 @@
 import react from 'react';
 import PostCollection from './postCollection';
+import './mock_style.css';
 
 class Posts extends react.Component {
     state = {numCollections: 2, collections: [<PostCollection numCollections={1}/>]};
